@@ -3,7 +3,7 @@
 #include "STRING.cpp"
 #include "INTEGER.cpp"
 
-using namespace std;
+//using namespace std;
 
     STRING titulos;
     STRING palabra;
@@ -22,24 +22,35 @@ int main(int argc, char** argv) {
 		switch(op){
 			case 1:{
 				int p;
-				cout<<"+----------[Agregar Integer]-----------+"<<endl;
-						cout<<"Ingrese un numero: ";
-						cin>>x;
-						cout<<"Ingrese un numero: ";
-						cin>>y;
-				cout<<"+--------------------------------------+"<<endl;
-				cout<<endl;
+					titulos<<"+----------[Agregar Integer]-----------+";
+					!titulos;
+						titulos<<"Ingrese un numero: ";
+						!titulos;
+						x<<x;
+						titulos<<"Ingrese un numero: ";
+						!titulos;
+						y<<y;
+				titulos<<"+--------------------------------------+";
+			   !titulos;
+			
 				
 				
 				
-				cout<<"+------------------ Menu---------------+"<<endl;
-				cout<<"| Suma                             [1] |"<<endl;
-				cout<<"| Resta                            [2] |"<<endl;
-				cout<<"| Multiplicacion                   [3] |"<<endl;
-				cout<<"| Division                         [4] |"<<endl;
-				cout<<"+--------------------------------------+"<<endl;
-				cout<<"Elija una opcion: "<<endl;
-				cin>>p;
+				titulos<<"+------------------ Menu---------------+";
+				!titulos;
+				titulos<<"| Suma                             [1] |";
+				!titulos;
+				titulos<<"| Resta                            [2] |";
+				!titulos;
+				titulos<<"| Multiplicacion                   [3] |";
+			    !titulos;
+				titulos<<"| Division                         [4] |";
+				!titulos;
+				titulos<<"+--------------------------------------+";
+				!titulos;
+				titulos<<"Elija una opcion: ";
+				!titulos;
+				p<<p;
 				switch(p){
 					case 1:{
 						titulos<<"+----------[Suma]-----------+";
@@ -82,8 +93,8 @@ int main(int argc, char** argv) {
 			case 2:{
 			titulos << "---------[Agregar Char]---------+ ";
   			!titulos;
-  			letra1 << 'n';
-            letra2 << 'w';
+  			letra1 << 's';
+            letra2 << 'p';
             titulos << "---------[Operacion Char]---------+ ";
             !(letra1 + letra2);
             !fin_linea;
@@ -96,8 +107,8 @@ int main(int argc, char** argv) {
 			case 3: {
 			titulos << "---------[Agregar Char]---------+ ";
   			!titulos;
-  			letra1 << 'n';
-            letra2 << 'w';
+  			letra1 << 's';
+            letra2 << 'p';
 				
 		    titulos << "palabra*5: ";
             !titulos;
@@ -113,7 +124,8 @@ int main(int argc, char** argv) {
 			}
 
 			default: {
-				cout<<"Opcion invalida"<< endl;
+				titulos<<"Opcion invalida";
+			    !titulos;
 				menu();
 				break;
 			}
@@ -124,13 +136,20 @@ int main(int argc, char** argv) {
 }
 int menu(){
 	int opcion = 0;
-	cout<<"********** Menu **********"<<endl;
-	cout<<"* 1. Operacion Integer   *"<<endl;
-	cout<<"* 2. Operacion Char      *"<<endl;
-	cout<<"* 3. Operacion String    *"<<endl;
-	cout<<"* 4. Salir               *"<<endl;
-	cout<<"**************************"<<endl;
-	cout<<"Elija una opcion: "<<endl;
-	cin>> opcion;
+	titulos<<"+-----------Menu---------+";
+	!titulos;
+	titulos<<"| 1. Operacion Integer   |";
+	!titulos;
+	titulos<<"| 2. Operacion Char      |";
+	!titulos;
+	titulos<<"| 3. Operacion String    |";
+	!titulos;
+	titulos<<"| 4. Salir               |";
+	!titulos;
+	titulos<<"+------------------------+";
+	!titulos;
+	titulos<<"Elija una opcion: ";
+	!titulos;
+	opcion << opcion;
 	return opcion;
 }
